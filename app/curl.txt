@@ -1,0 +1,4 @@
+curl http://localhost:3000/api/v1/prediction/c233ebd1-535d-4737-879b-10e5cddade95 \
+     -X POST \
+     -d '{"question": "Hey, how are you?"}' \
+     -H "Content-Type: application/json"
