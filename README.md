@@ -143,10 +143,7 @@ Flowise se encargará automáticamente de:
 - Guardar vectores en `In-Memory Vector Store`
 - Recuperar con `Retriever Tool`
 - Procesar con agentes especializados (`ChatOpenAI`)
-- Generar contenido y resumen en:  
-  ```
-  output/summaries/
-  ```
+- Generar contenido y resumen en: `output/summaries/`
 
 ---
 
