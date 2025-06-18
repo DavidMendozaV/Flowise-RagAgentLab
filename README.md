@@ -79,25 +79,74 @@ rag-agent-knowledge-pipeline/
 
 ---
 
-## ⚙️ Cómo usar
+## ⚙️ ¿Cómo usar?
 
-1. Inicia Flowise y accede a la interfaz web.
-2. Importa el archivo:
-   ```
-   flowise/agents/rag_pipeline_agent.json
-   ```
-3. Coloca tus documentos PDF en:
-   ```
-   data/sample_docs/
-   ```
-4. Flowise ejecutará automáticamente el pipeline:
+### 1. Instala Flowise
 
-   - Divide el texto con `RecursiveCharacterTextSplitter`
-   - Embebe con `OpenAIEmbeddings`
-   - Guarda vectores en `In-Memory Vector Store`
-   - Recupera con `Retriever Tool`
-   - Procesa con agentes vía `ChatOpenAI`
-   - Escribe resultados en `output/summaries/`
+Puedes instalar Flowise de forma local con `npm` o `yarn`. Asegúrate de tener Node.js 18+ y npm instalado:
+
+```bash
+# Opción 1: con npm
+npm install -g flowise
+
+# Opción 2: con yarn
+yarn global add flowise
+```
+
+> 📌 Si prefieres usar Docker, visita: [https://docs.flowiseai.com/getting-started/docker](https://docs.flowiseai.com/getting-started/docker)
+
+---
+
+### 2. Ejecuta Flowise
+
+Inicia Flowise localmente con:
+
+```bash
+flowise start
+```
+
+Esto levantará la interfaz en:  
+👉 `http://localhost:3000`
+
+---
+
+### 3. Importa el agente
+
+Desde la interfaz de Flowise:
+
+1. Navega a `http://localhost:3000`
+2. En el panel lateral, haz clic en **"Agents"**
+3. Usa la opción **"Import JSON"** y selecciona el archivo:
+
+```
+flowise/agent/rag_pipeline_agent.json
+```
+
+---
+
+### 4. Prepara tus documentos PDF
+
+Coloca tus archivos PDF en la siguiente carpeta:
+
+```
+data/sample_docs/
+```
+
+---
+
+### 5. Ejecuta el pipeline
+
+Flowise se encargará automáticamente de:
+
+- Dividir el texto con `RecursiveCharacterTextSplitter`
+- Embebe con `OpenAIEmbeddings`
+- Guardar vectores en `In-Memory Vector Store`
+- Recuperar con `Retriever Tool`
+- Procesar con agentes especializados (`ChatOpenAI`)
+- Generar contenido y resumen en:  
+  ```
+  output/summaries/
+  ```
 
 ---
 
