@@ -1,6 +1,6 @@
 # Flowise-RagAgentLab 🤖
 
-**RAG Agent ** es una aplicación basada en agentes colaborativos de inteligencia artificial, diseñada para transformar documentos PDF en conocimiento estructurado, contenido creativo y resúmenes inteligentes. 
+RAG Agent Lab es una aplicación basada en agentes colaborativos de inteligencia artificial, diseñada para transformar documentos PDF en conocimiento estructurado, contenido creativo y resúmenes inteligentes. 
 
 Construido con [FlowiseAI](https://flowiseai.com/), este proyecto integra capacidades de **Retrieval-Augmented Generation (RAG)**, dividiendo, embebiendo y recuperando texto de forma inteligente con herramientas modernas como `RecursiveCharacterTextSplitter`, `In-Memory Vector Store` y `Retriever Tool`, además de usar `OpenAI GPT-4o` como modelo base.
 
